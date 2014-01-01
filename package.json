@@ -12,6 +12,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Dirk Krause"
+  "author": "Dirk Krause",
   "license": "BSD"
 }
