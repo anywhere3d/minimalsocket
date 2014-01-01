@@ -14,11 +14,7 @@ io.set('log level', 2);
 setInterval(function(){
     var n = Math.floor((Math.random()*100)+1);
     var msg = {'text': n.toString()}
-    io.sockets.clients().forEach(function (socket) {
-        socket.send(JSON.stringify(msg));
-    });
-    // this should work but doesn't
-    // io.sockets.emit(JSON.stringify(msg))
+    io.sockets.emit('message', JSON.stringify(msg))
 }, 4000);
 
 
